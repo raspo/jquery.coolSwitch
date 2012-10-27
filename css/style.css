@@ -1,0 +1,48 @@
+/* ========================================================================== */
+/* RESET
+/* ========================================================================== */
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, form, fieldset, legend, input, textarea, img, blockquote, iframe, code, pre{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img{
+    display: block;
+}
+
+a, a:hover, a:active, a:focus{
+    text-decoration: none;
+}
+
+
+/* ========================================================================== */
+/* HTML5
+/* ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary{
+    display: block;
+}
+
+
+/* ========================================================================== */
+/* MAIN
+/* ========================================================================== */
+
+
+body{
+    font: 12px sans-serif;
+    color: #444;
+}
+
+.wrap{
+    width: 940px;
+    margin: 50px auto;
+}

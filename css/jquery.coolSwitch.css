@@ -1,0 +1,132 @@
+/* ==================================== *
+ * coolSwitch jQuery plugin
+ * ==================================== */
+
+/*
+<div class="coolSwitch-wrapper">
+    <label class="coolSwitch-label"></label>
+    <div class="coolSwitch">
+            <span class="coolSwitch-handle"></span>
+        <div>
+    </div>
+    <label class="coolSwitch-label"></label>
+</div>
+*/
+
+.coolSwitch-wrapper{
+    display: inline-block;
+    margin: 0 0 10px;
+}
+
+.coolSwitch-label{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.coolSwitch{
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.coolSwitch-handle{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    -webkit-transition: left 0.1s ease-out;
+        -ms-transition: left 0.1s ease-out;
+       -moz-transition: left 0.1s ease-out;
+         -o-transition: left 0.1s ease-out;
+            transition: left 0.1s ease-out;
+}
+
+.coolSwitch-wrapper.isToggled .coolSwitch-handle{
+    left: 100%;
+}
+
+
+
+/* starting theme */
+/*
+.coolSwitch-wrapper{
+    height: 16px;
+}
+
+.coolSwitch-label{
+    line-height: 16px;
+    font-size: 10px;
+}
+
+.coolSwitch-label-selected{
+    font-weight: bold;
+}
+
+.coolSwitch{
+    height: 6px;
+    width: 30px;
+    line-height: 18px;
+    background: #ddd;
+    border: 1px solid #666;
+    border-radius: 4px;
+}
+
+.coolSwitch-handle{
+    top: -5px; /* = - 1 * ( ( handle totheight  / 2) - (height / 2) ) *//*
+    margin-left: -8px; /* = - 1 * ( handle totheight  / 2) *//*
+    width: 14px;
+    height: 14px;
+    background: #ccc;
+    border: 1px solid #999;
+    border-radius: 50%;
+}
+
+*/
+
+
+
+/* mtd theme */
+
+.coolSwitch-wrapper{
+    height: 19px;
+}
+
+.coolSwitch-label{
+    line-height: 19px;
+    font-size: 11px;
+}
+
+.coolSwitch-label-selected{
+    font-weight: bold;
+}
+
+.coolSwitch{
+    height: 11px;
+    width: 25px;
+    margin: 0 15px;
+    line-height: 19px;
+    background: url(../img/mtd-sprites.png) no-repeat -19px -19px;
+}
+
+.coolSwitch-wrapper.isToggled .coolSwitch{
+    background-position: -44px -30px;
+}
+
+.coolSwitch-handle{
+    top: -6px; /* = - 1 * ( ( handle totheight  / 2) - (height / 2) ) */
+    margin-left: -9px; /* = - 1 * ( handle totheight  / 2) */
+    width: 19px;
+    height: 19px;
+    background: url(../img/mtd-sprites.png) no-repeat 0 0;
+}

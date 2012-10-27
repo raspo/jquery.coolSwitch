@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="">
+    <meta name="author" content="raspo">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/jquery.coolSwitch.css" />
+
+    <!-- JS -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+
+    <script src="js/jquery.coolSwitch.js"></script>
+
+    <script>
+    $(document).ready(function(){
+        $('select').coolSwitch();
+    });
+    </script>
+
+    <title>jQuery coolSwitch Plugin</title>
+</head>
+<body>
+
+    <header>
+        
+    </header>
+
+    <div class="wrap">
+
+        <select name="select1" id="select1">
+            <option value="on">On</option>
+            <option value="off">Off</option>
+        </select>
+
+        <br>
+
+        <select name="select2" id="select2">
+            <option value="on">Yes</option>
+            <option value="off" selected="selected">No</option>
+        </select>
+
+    </div>
+    
+    <footer></footer>
+    
+</body>
+</html>
